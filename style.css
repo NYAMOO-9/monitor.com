@@ -1,54 +1,100 @@
+/* 기본 스타일 */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
 }
 
 main {
   padding: 20px;
+  text-align: center;
 }
 
 h2 {
-  margin-top: 20px;
-  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
 }
 
-.button-container {
-  margin-top: 20px;
+/* 카드 스타일 */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 15px 20px;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: left;
   cursor: pointer;
-  font-size: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-button:hover {
-  background-color: #45a049;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.card h3 {
+  margin: 0 0 10px;
+  color: #4CAF50;
+}
+
+.card p {
+  margin: 0;
+  color: #555;
+}
+
+/* 푸터 스타일 */
 footer {
-  text-align: center;
-  padding: 10px 0;
   background: #333;
-  color: #fff;
-  margin-top: 20px;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
 }
