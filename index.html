@@ -3,41 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>모니터 기술 메인</title>
+  <title>모니터 기술</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>모니터 기술</h1>
-    <p>다양한 모니터 기술과 정보를 한눈에 확인하세요!</p>
+    <p>최신 모니터 기술과 정보를 탐색하세요</p>
   </header>
 
   <main>
-    <h2>탐색할 주제를 선택하세요</h2>
-    <div class="card-container">
-      <div class="card" onclick="redirectTo('types.html')">
-        <h3>모니터의 종류</h3>
-        <p>CRT, LCD, OLED 등 다양한 모니터 종류를 알아보세요.</p>
-      </div>
-      <div class="card" onclick="redirectTo('features.html')">
-        <h3>모니터 기술들</h3>
-        <p>HDR, 주사율, 해상도 등 기술적 요소를 탐구하세요.</p>
-      </div>
-      <div class="card" onclick="redirectTo('quiz.html')">
-        <h3>퀴즈</h3>
-        <p>모니터에 대해 얼마나 알고 있는지 테스트하세요!</p>
-      </div>
-      <div class="card" onclick="redirectTo('resources.html')">
-        <h3>관련 사이트</h3>
-        <p>더 많은 정보를 제공하는 리소스를 확인하세요.</p>
-      </div>
+    <div class="button-container">
+      <button onclick="redirectTo('types.html')" class="gradient-button">모니터의 종류</button>
+      <button onclick="redirectTo('features.html')" class="gradient-button">모니터 기술들</button>
+      <button onclick="redirectTo('quiz.html')" class="gradient-button">퀴즈</button>
+      <button onclick="redirectTo('resources.html')" class="gradient-button">관련 사이트</button>
     </div>
   </main>
 
   <footer>
-    <p>© 2024 모니터 기술 웹사이트 | <a href="mailto:info@monitor-tech.com">문의하기</a></p>
+    <p>© 2024 모니터 기술 웹사이트</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function redirectTo(page) {
+      window.location.href = page;
+    }
+  </script>
 </body>
 </html>
