@@ -3,7 +3,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: linear-gradient(120deg, #e0e0e0, #f9f9f9);
   color: #333;
   display: flex;
   flex-direction: column;
@@ -11,21 +11,23 @@ body {
 }
 
 header {
-  background: #333;
-  color: white;
-  padding: 40px 20px;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 50px 20px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 header p {
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #bbb;
 }
 
@@ -34,44 +36,44 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .button-container {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  width: 100%;
-  max-width: 600px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  width: 80%;
+  max-width: 1000px;
 }
 
 .gradient-button {
   background: linear-gradient(135deg, #444, #777);
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 20px 30px;
-  font-size: 1.2em;
+  border-radius: 12px;
+  padding: 20px 40px;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .gradient-button:hover {
-  background: linear-gradient(135deg, #555, #999);
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #555, #888);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gradient-button:active {
-  transform: translateY(2px);
+  transform: scale(0.98);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-  background: #333;
+  background: #2c2c2c;
   color: #bbb;
   text-align: center;
   padding: 15px 0;
@@ -82,21 +84,26 @@ footer p {
   margin: 0;
 }
 
-/* 반응형 디자인 */
-@media (min-width: 768px) {
-  .button-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-}
-
+/* 데스크톱 전용 스타일 */
 @media (min-width: 1024px) {
-  .button-container {
-    grid-template-columns: 1fr 1fr;
+  header {
+    padding: 60px 20px;
+  }
+
+  header h1 {
+    font-size: 4em;
+  }
+
+  header p {
+    font-size: 1.5em;
   }
 
   .gradient-button {
-    font-size: 1.5em;
-    padding: 25px 40px;
+    padding: 25px 50px;
+    font-size: 1.8em;
+  }
+
+  .button-container {
+    gap: 40px;
   }
 }
