@@ -4,44 +4,45 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
+  text-align: center;
 }
 
 header {
   background: #333;
   color: #fff;
   padding: 10px 20px;
-  text-align: center;
 }
 
 header h1 {
   margin: 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
 main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 20px;
-  padding: 10px;
-  background: #fff;
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 footer {
