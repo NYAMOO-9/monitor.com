@@ -1,72 +1,80 @@
-/* 기본 폰트 설정 */
+/* 기본 설정 */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #f4f7fc;
+  color: #333;
 }
 
-/* 헤더 스타일 */
 header {
-  background-color: #2c3e50;
+  background-color: #007bff;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
 }
 
 header h1 {
+  font-size: 36px;
   margin: 0;
-  font-size: 2.5em;
 }
 
 header p {
-  margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
-/* 메인 콘텐츠 스타일 */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* 콘텐츠 레이아웃 */
 .product-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
 .product {
   background-color: white;
-  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(33.333% - 30px);
-  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
-.product h2, .product h3 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: #2c3e50;
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.product p {
-  font-size: 1.1em;
+.product p, .product ul {
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  color: #555;
 }
 
 .product ul {
-  list-style: none;
-  padding-left: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-.product ul li {
-  font-size: 1em;
-  margin-bottom: 10px;
+.product li {
+  margin: 5px 0;
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* 이미지 스타일 */
@@ -77,25 +85,40 @@ main {
   margin-bottom: 20px;
 }
 
-/* 버튼 스타일 */
+/* '뒤로가기' 버튼 */
 .gradient-button {
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
-  padding: 10px 20px;
-  border: none;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  font-size: 18px;
+  padding: 12px 25px;
   border-radius: 5px;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
 }
 
 .gradient-button:hover {
-  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  background: linear-gradient(45deg, #0056b3, #008cba);
+  transform: scale(1.05);
 }
 
+/* 푸터 */
 footer {
   text-align: center;
-  background-color: #2c3e50;
+  padding: 20px;
+  background-color: #333;
   color: white;
-  padding: 10px 0;
-  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .product-container {
+    padding: 0 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
 }
