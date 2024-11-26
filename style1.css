@@ -114,3 +114,11 @@ footer {
     padding: 12px 25px;
   }
 }
+
+/* GIF 이미지 스타일링 */
+.image-style {
+  max-width: 100%;  /* 화면 크기에 맞게 반응형 */
+  height: auto;     /* 비율 유지 */
+  display: block;   /* 이미지가 블록 요소로 다뤄짐 */
+  margin: 20px auto; /* 중앙 정렬 */
+}
