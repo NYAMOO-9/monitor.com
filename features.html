@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>모니터 기술</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,12 +17,13 @@
   <main>
     <div class="product-container">
       <section class="product">
-        <h2>1. 디스플레이 기술 종류</h2>
+        <h2>1. 디스플레이 기술</h2>
         <p>모니터에 사용되는 주요 디스플레이 기술은 크게 <strong>LCD</strong>, <strong>LED</strong>, <strong>OLED</strong>, <strong>QLED</strong> 등으로 나눌 수 있습니다.</p>
         <ul>
           <li><strong>장점</strong>: 저렴하고, 밝기와 해상도가 우수</li>
           <li><strong>단점</strong>: 검은색 표현이 부족하고, 시야각이 좁을 수 있음</li>
         </ul>
+        <button onclick="window.location.href='display-tech.html'">디스플레이 기술 자세히 보기</button>
       </section>
 
       <section class="product">
@@ -33,67 +35,59 @@
           <li><code>Quad HD (QHD, 1440p)</code>: 2560x1440 픽셀</li>
           <li><code>4K Ultra HD (UHD)</code>: 3840x2160 픽셀</li>
         </ul>
+        <button onclick="window.location.href='resolution.html'">해상도 자세히 보기</button>
       </section>
 
       <section class="product">
         <h2>3. 주사율 (Refresh Rate)</h2>
-        <p>주사율은 화면이 1초에 갱신되는 횟수를 나타냅니다. 높은 주사율은 더 부드러운 화면 전환을 제공합니다.</p>
+        <p>화면이 1초에 갱신되는 횟수를 나타낸다. 높은 주사율은 더 부드러운 화면 전환에 도움을 준다.</p>
         <ul>
-          <li><code>60Hz</code>: 일반적인 사용에 충분</li>
-          <li><code>120Hz, 144Hz, 240Hz 이상</code>: 게임 및 고급 작업에 적합</li>
+          <li><strong>60hz</strong>: 가장 보편적이고 일반적으로 사용된다</li>
+          <li><strong>120hz, 144hz, 240hz 이상</strong>: 주로 게임 및 고급 작업에 적합하다</li>
         </ul>
+        <button onclick="window.location.href='rf-rate.html'">주사율 자세히 보기</button>
       </section>
 
       <section class="product">
-        <h2>4. 응답 속도 (Response Time)</h2>
-        <p>응답 속도는 화면의 픽셀이 색을 바꾸는 데 걸리는 시간입니다. 낮은 응답 속도는 빠른 화면 전환에 유리합니다.</p>
+        <h2>4. 응답 속도(Response Time)</h2>
+        <p>픽셀이 색을 바꾸는데 걸리는 시간으로 낮은 응답 속도를 가질수록 빠른 화면 전환이 가능해진다.</p>
         <ul>
-          <li><code>1ms</code> 이하: 고속 게임에 적합</li>
-          <li><code>5ms</code> 이하: 일반적인 용도에 적합</li>
+          <li><strong>1ms 이하</strong>: 게임과 같은 빠른 화면 전환이 이루어지는 환경에 적합</li>
+          <li><strong>5ms 이상</strong>: 보편적인 응답 속도</li>
         </ul>
+        <button onclick="window.location.href='rt.html'">응답 속도 자세히 보기</button>
       </section>
 
-      <section class="product">
+            <section class="product">
         <h2>5. 시야각 (Viewing Angle)</h2>
-        <p>시야각은 화면을 정면이 아닌 다른 각도에서 봤을 때 화면이 얼마나 선명하게 보이는지를 나타냅니다.</p>
+        <p>화면을 정면이 아닌 각도에서 봤을 때 화면의 선명도를 말함.</p>
+        <ul>
+          <li><strong>장점</strong>: 저렴하고, 밝기와 해상도가 우수</li>
+          <li><strong>단점</strong>: 검은색 표현이 부족하고, 시야각이 좁을 수 있음</li>
+        </ul>
+        <button onclick="window.location.href='va.html'">시야각 자세히 보기</button>
       </section>
 
       <section class="product">
         <h2>6. 밝기 (Brightness)</h2>
-        <p>밝기는 화면의 밝기를 나타내며, <strong>nits</strong>로 측정됩니다. 일반적으로 250~350 nits 사이입니다.</p>
+        <p>화면의 밝기를 나타내며 <strong>nits</strong>라는 단위로 측정한다.</p>
         <ul>
-          <li><code>400~500 nits 이상</code>: HDR 콘텐츠와 고급 디스플레이에 적합</li>
-          <li><code>250~350 nits</code>: 일반적인 사용 환경에서 충분</li>
+          <li><strong>400nits 이상</strong>: HDR 콘텐츠와 고급 디스플레이에 적합</li>
+          <li><strong>250~350 nits</strong>: 일반적인 사용 환경에 적합</li>
         </ul>
+        <button onclick="window.location.href='bright.html'">밝기 자세히 보기</button>
       </section>
 
       <section class="product">
-        <h2>7. HDR (High Dynamic Range)</h2>
-        <p>HDR은 화면에서 더 넓은 명암비를 표현하고, 더 생동감 있는 색감을 제공합니다.</p>
+        <h2>7. 연결 포트</h2>
+        <p>모니터에 사용되는 주요 입력 포트는 <strong>HDMI</strong>, <strong>DP</strong>, <strong>USB-C</strong>, <strong>VGA</strong> 등이 있습니다.</p>
         <ul>
-          <li><strong>HDR10</strong>: 가장 널리 사용되는 HDR 포맷</li>
-          <li><strong>Dolby Vision</strong>: 더 높은 밝기와 색 깊이를 지원</li>
-        </ul>
-      </section>
-
-      <section class="product">
-        <h2>8. 커브드 모니터 (Curved Monitors)</h2>
-        <p>커브드 모니터는 화면이 약간 휘어진 형태로, 몰입감을 높여주는 효과가 있습니다.</p>
-        <ul>
-          <li><code>1000R</code>: 가장 큰 곡률, 인간의 눈과 비슷</li>
-          <li><code>1500R, 1800R</code>: 상대적으로 덜 휘어진 형태</li>
-        </ul>
-      </section>
-
-      <section class="product">
-        <h2>9. 연결 포트</h2>
-        <p>모니터는 다양한 입력 포트를 통해 컴퓨터와 연결됩니다.</p>
-        <ul>
-          <li><strong>HDMI</strong>: 고화질 영상과 오디오 신호 전송</li>
-          <li><strong>DisplayPort</strong>: 고해상도와 고주사율 지원</li>
+          <li><strong>HDMI</strong>: 고화질의 영상/오디오 신호 전송에 적합</li>
+          <li><strong>DP</strong>: 고해상도와 고주사율을 지원</li>
           <li><strong>USB-C</strong>: 데이터 전송 및 전력 공급</li>
-          <li><strong>VGA</strong>: 오래된 포트, 점차 사라짐</li>
+          <li><strong>VGA</strong>: 현재는 사용하지 않는 포트</li>
         </ul>
+        <button onclick="window.location.href='port.html'">연결 포트 자세히 보기</button>
       </section>
 
       <section>
@@ -105,5 +99,6 @@
   <footer>
     <p>&copy; 2024 모니터 기술</p>
   </footer>
+
 </body>
 </html>
