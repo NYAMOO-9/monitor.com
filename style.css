@@ -42,8 +42,12 @@ footer {
   justify-items: center;
   margin-top: 50px;
   padding: 20px;
+  max-width: 1200px; /* 버튼들이 화면을 가득 채우지 않도록 최대 너비 설정 */
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* 각 버튼 스타일링 */
 .gradient-button {
   background: linear-gradient(45deg, #ff4b2b, #ff416c);
   color: white;
@@ -54,7 +58,7 @@ footer {
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px; /* 버튼 최대 너비 설정 */
   text-align: center;
 }
 
@@ -65,6 +69,19 @@ footer {
 
 .gradient-button:focus {
   outline: none;
+}
+
+/* 데스크탑 화면에서 버튼들이 균등하게 배치되도록 설정 */
+@media (min-width: 1024px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr); /* 두 개의 열로 배치 */
+    gap: 30px;
+  }
+
+  .gradient-button {
+    font-size: 1.5rem;
+    padding: 25px 50px;
+  }
 }
 
 /* 모바일 화면에 맞게 버튼 크기 및 레이아웃 조정 */
